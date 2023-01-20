@@ -1,0 +1,6 @@
+<hello name="{{ name }}"></hello>
+<div class="row">Parent</div>
+<div class="row">{{counter}}</div>
+<button (click)="onCount()">Increment</button>
+
+<app-child [counterCount]="counter" (onExecuteCount)="listenOnCount($event)"></app-child>
